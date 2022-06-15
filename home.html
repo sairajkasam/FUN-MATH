@@ -1,0 +1,345 @@
+<html>
+
+<style>
+.a1{outline-style: solid;
+
+background-image: url("abc.png");
+ }
+
+.a2{outline-style: solid;
+outline-color:white;
+background-image: url("abc2.png");
+
+ }
+
+.a3{font-family:"American Typewriter";
+color:white;
+font-size:40; }
+
+
+
+
+
+
+
+
+* {
+
+  margin: 0px;
+
+  padding: 0px;
+
+  box-sizing: border-box;
+
+}
+
+.body-text {
+
+  display: flex;
+
+  font-family: "Montserrat", sans-serif;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 250px;
+
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh;
+
+  background-color: black;
+
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.heading {
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  font-size: 20px;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 30%;
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+background-color:#787FF0;
+  
+
+}
+
+.nav-links li a.active {
+
+  background-color: #4caf50;
+
+}
+
+h4{
+  font-size: 30px;
+  font-family:"Didot";
+}
+#navbar{
+outline-style: solid;
+}
+
+
+</style>
+
+ 
+ <body>
+ 
+ <br>
+ 
+ <div id="navbar">
+ 
+ 
+ <nav>
+ <div id="logo"><img src="logo.jpg" width="50" height="50"></div>
+
+      <div class="heading">
+
+        <h4>FUN-MATH</h4>
+
+      </div>
+
+
+      <ul class="nav-links">
+
+        <li><a href="home.html" >Home</a></li>
+
+        <li><a href="aboutus.html">About Us</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+</div>
+
+	
+ <br>
+ <br>
+ <br>
+ 
+<div id="a4">
+
+<div align="center" class="a1">
+<br>
+<br>
+<marquee bgcolor="white" direction="right" loop="30000" >
+<b>FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES - FIBONACCI SERIES</b>
+</marquee>
+<br>
+<br>
+<h1 class="a3"><b>HOW MANY NUMBERS YOU WANT TO PRINT IN FIB SERIES</h1><br>
+<input type="text" id="abc">
+<button type="submit" onclick="myfunc()"><b>PRINT<b></button>
+<br>
+<br>
+</div>
+<br>
+<br>
+
+<div class="a2">
+<br>
+<br>
+
+<marquee bgcolor="white" direction="right" loop="30000" >
+<b>PALINDROME CHECKER - PALINDROME CHECKER  - PALINDROME CHECKER - PALINDROME CHECKER - PALINDROME CHECKER - PALINDROME CHECKER - PALINDROME CHECKER - PALINDROME CHECKER</b>
+</marquee>
+
+<br>
+<br>
+
+
+<div align="center">
+<h1 class="a3">ENTER NUMBER TO CHECK WHETHER IT IS PALINDROMEOR NOT</h1><br>
+ <input id="no_input">
+<button onclick="palin()"><b>Check<b></button>
+</body>
+<br>
+<br>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="a1">
+<br>
+<br>
+
+<marquee bgcolor="white" direction="right" loop="30000" >
+<b>FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL - FACTORIAL</b>
+</marquee>
+<br>
+<br>
+<div align="center">
+<h1 class="a3">ENTER NUMBER TO FIND FACTORIAL</h1>
+<br>
+<input id="zz">
+<button onclick="facto()"><b>FIND<b></button>
+
+</div>
+<br>
+
+</div>
+
+<br>
+<br>
+
+<div align="center" class="a1">
+<br>
+<br>
+<marquee bgcolor="white" direction="right" loop="30000" >
+<b>ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - ARMSTRONG - </b>
+</marquee>
+<br>
+<br>
+<h1 class="a3"><b>ENTER A NUMBER TO FIND  IT IS ARMSTRONG OR NOT </h1><br>
+<input type="text" id="arms">
+<button type="submit" onclick="arm()"><b>FIND<b></button>
+<br>
+<br>
+</div>
+</div>
+
+
+<script>
+function myfunc()
+{
+var a=0,b=1,c,i;
+
+var num=document.getElementById('abc');
+
+var n=num.value;
+document.writeln("FIB SERIES");
+document.writeln("<br>");
+
+for(i=0;i<n;i++)
+{
+
+document.writeln(a);
+document.writeln("<br>");
+c=a+b;
+a=b;
+b=c;
+
+}
+
+}
+
+function palin()
+{
+var a,no,b,temp=0;
+
+no=Number(document.getElementById("no_input").value);
+
+b=no;
+while(no>0)
+{
+a=no%10;
+no=parseInt(no/10);
+temp=temp*10+a;
+}
+if(temp==b)
+{
+alert(b+" IS A PALINDROME NUMBER");
+}
+else
+{
+alert(b+" IS NOT A PALINDROME NUMBER");
+}
+}
+
+function facto(){  
+var i, num, fa;  
+fa = 1;  
+num = document.getElementById("zz").value;  
+for(i = 1; i <= num; i++)    
+{  
+fa = fa * i;  
+}  
+i = i - 1;    
+alert( "The factorial of the number " + num + " is: " + fa ) ;
+
+} 
+
+function arm() {
+
+
+
+let sum = 0;
+const number = Number(document.getElementById("arms").value);
+
+let temp = number;
+while (temp > 0) {
+    
+    let remainder = temp % 10;
+
+    sum += remainder * remainder * remainder;
+
+    
+    temp = parseInt(temp / 10); 
+}
+
+if (sum == number) {
+   alert(number+ " IS A ARMSTRONG NUMBER");
+}
+else {
+      alert(number+ " IS NOT A ARMSTRONG NUMBER");
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<html>
+<style>
+* {
+
+  margin: 0px;
+
+  padding: 0px;
+
+  box-sizing: border-box;
+
+}
+
+.body-text {
+
+  display: flex;
+
+  font-family: "Montserrat", sans-serif;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 250px;
+
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh;
+
+  background-color: black;
+
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.heading {
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  font-size: 20px;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 30%;
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+background-color:#787FF0;
+  
+
+}
+
+.nav-links li a.active {
+
+  background-color: #4caf50;
+
+}
+
+h4{
+  font-size: 30px;
+  font-family:"Didot";
+}
+#navbar{
+outline-style: solid;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+h2{
+font-size:30px;
+}
+h3{
+font-size:50px;
+}
+h5{
+font-size:15px;
+}
+
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+} 
+</style>
+
+<body>
+<br>
+ 
+ <div id="navbar">
+ 
+ 
+ <nav>
+ <div id="logo"><img src="logo.jpg" width="50" height="50"></div>
+
+      <div class="heading">
+
+        <h4>FUN-MATH</h4>
+
+      </div>
+
+
+      <ul class="nav-links">
+
+        <li><a href="home.html">Home</a></li>
+
+        <li><a href="aboutus.html">About Us</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+</div>
+<br>
+<div class="about-section">
+  <h1>About Us </h1>
+  <br>
+  <p>Mathematics is the science that deals with the logic of shape, quantity and arrangement. Math is all around us, in everything we do. It is the building block for everything in our daily lives, including mobile devices, computers, software, architecture (ancient and modern), art, money, engineering and even sports..</p>
+  <br>
+  <p>Correlating the concepts taught in the classes with the practical applications of those concepts.</p>
+
+   <p>Proving a hand on experience to the children .</p>
+</div>
+<br>
+<h3 style="text-align:center">Our Team</h3>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="sai.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>SAI RAJ </h2>
+        <p class="title">FOUNDER</p>
+      
+        <p>kasamsairaj@gmail.com</p>
+		<br>
+        <p><button class="button">Contact</button></p>
+		<br>
+		<div class="profiles">
+		<h5>PROFILE:</h5>  <br><img src="link.png" width="40" height="40""> <img src="insta.jpg" width="40" height="40">
+		</div>
+		<br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="karthik.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>KARTHIK</h2>
+        <p class="title">FOUNDER</p>
+        
+        <p>kondakarthik@gmail.com</p>
+		<br>
+        <p><button class="button">Contact</button></p>
+		<br>
+		<div class="profiles">
+		<h5>PROFILE:</h5>  <br><img src="link.png" width="40" height="40""> <img src="insta.jpg" width="40" height="40">
+		</div>
+		<br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="shiva.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>SHIVA</h2>
+        <p class="title">FOUNDER</p>
+        
+        <p>shivakumar@gmail.com</p>
+		<br>
+        <p><button class="button">Contact</button></p>
+		<br>
+		<div class="profiles">
+		<h5>PROFILE:</h5>  <br><img src="link.png" width="40" height="40""> <img src="insta.jpg" width="40" height="40">
+		</div>
+		<br>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="surya.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>SURYA</h2>
+        <p class="title">FOUNDER</p>
+        
+        <p>suryateja@gmail.com</p>
+		<br>
+		 <p><button class="button">Contact</button></p>
+		<br>
+		<div class="profiles">
+		<h5>PROFILE:</h5>  <br><img src="link.png" width="40" height="40""> <img src="insta.jpg" width="40" height="40">
+		</div>
+		<br>
+		
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>
+
+<br>
+<br>
+<h2>FEED BACK FORM</h2>    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+        
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">  
+<br>	
+      <input type="submit" value="Submit">    
+    
+</div>
+	
+  </form>    
+</div>
+
+
+</body>
+</html>

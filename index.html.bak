@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Learnosity Logo</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+<!-- partial:index.partial.html -->
+<div class='all'>
+  <div class='con'>
+    <div class='rainbow'>
+      <div class='panel'></div>
+      <div class='panel'></div>
+      <div class='panel'></div>
+      <div class='panel'></div>
+      <div class='panel'></div>
+      <div class='panel'></div>
+    </div>
+    <div class='logo'>
+      <p>FUN MATH</p>
+	  
+    </div>
+  </div>
+</div>
+<br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+<div align="center">
+<a href="home.html">
+      <button class="button button1"><b>CONTINUE</b></button>
+</a>
+</div>
+
+<!-- partial -->
+  
+</body>
+</html>
